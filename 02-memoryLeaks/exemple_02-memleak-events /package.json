@@ -1,0 +1,24 @@
+{
+  "name": "exemple_02-memleak-events-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "CLIMEM=8999 NODE -r climem index.js",
+    "climem": "npx climem 8999",
+    "flame0x": "npx 0x -- node index.js",
+    "doctor": "npx clinic doctor -- node index.js",
+    "flame": "npx clinic flame -- node index.js",
+    "heapprofiler": "npx clinic heapprofiler -- node index.js",
+    "test": "npx autocannon -c 1000 -d 30 -p 10 http://localhost:3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autocannon": "^7.10.0",
+    "climem": "^1.0.3",
+    "clinic": "^12.0.0"
+  }
+}
